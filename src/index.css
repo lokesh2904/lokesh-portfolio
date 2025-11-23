@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------------------------------------
+   GLOBAL RESET
+-------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #000 !important;  /* Full pure black */
+  color: #fff !important;
+  font-size: 18px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* --------------------------------------------------
+   DARK MODE
+-------------------------------------------------- */
+.dark body {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+/* Light mode = dark gray (never white) */
+body:not(.dark) {
+  background: #080A0D !important;
+  color: #fff !important;
+}
+
+/* --------------------------------------------------
+   PAGE TRANSITION
+-------------------------------------------------- */
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnim 0.4s forwards ease-out;
+}
+
+@keyframes fadeInAnim {
+  to {
+    opacity: 1;
+  }
+}
+
+/* --------------------------------------------------
+   SCROLLBAR
+-------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* --------------------------------------------------
+   GLOBAL TEXT STYLING
+-------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900 !important;
+  letter-spacing: 1px;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #60a5fa !important;
+}
+
+/* --------------------------------------------------
+   FIX CONTENT SPACING BELOW NAV
+-------------------------------------------------- */
+main, #page-transition {
+  padding-top: 100px !important;
+}
+
+/* --------------------------------------------------
+   CURSOR CANVAS FIX
+-------------------------------------------------- */
+#cursor-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+footer {
+  font-weight: 800 !important;
+  letter-spacing: 0.8px;
+  font-size: 1.1rem;
+}
+/* Bigger Navbar */
+header {
+  height: 90px !important;
+}
+
+header a {
+  font-size: 1.15rem !important;
+  font-weight: 800 !important;
+}
+
+header .text-2xl {
+  font-size: 2rem !important;
+}
