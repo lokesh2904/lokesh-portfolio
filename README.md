@@ -5,7 +5,7 @@
 This is my personal portfolio website built using **Vite + React + TailwindCSS**, featuring smooth animations, dark UI, cursor effects, and fully responsive pages.  
 It showcases my **projects, skills, experience, certifications, education, and contact form**.
 
-Live Demo → _(Add Vercel link after deployment)_  
+Live Demo → https://lokesh2904.github.io/lokesh-portfolio/ 
 GitHub Repository → https://github.com/lokesh2904/lokesh-portfolio
 
 ---
