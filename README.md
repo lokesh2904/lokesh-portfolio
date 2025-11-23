@@ -6,7 +6,7 @@ This is my personal portfolio website built using **Vite + React + TailwindCSS**
 It showcases my **projects, skills, experience, certifications, education, and contact form**.
 
 Live Demo → https://lokesh2904.github.io/lokesh-portfolio/ 
-GitHub Repository → https://github.com/lokesh2904/lokesh-portfolio
+ GitHub Repository → https://github.com/lokesh2904/lokesh-portfolio
 
 ---
 
